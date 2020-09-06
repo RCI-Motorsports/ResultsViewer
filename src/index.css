@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.category-tabs {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-size: 1.2rem;
+}
+
+.result-tab {
+  margin-top: 75px;
+}
+
+table.result-table  {
+  width: 1000px;
+  font-size: 1.2rem;
+}
+
+tr.PRO-AM {
+  background-color: #9000006e;
+}
+
+tr.AM {
+  background-color: #b90303f6;
+}
+
+tr.Silver {
+  background-color: #6e6e6ed5;
+}
