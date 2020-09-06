@@ -2,7 +2,7 @@
   "name": "results-viewer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://msundstrom.github.io/ResultsViewer",
+  "homepage": "https://rci-motorsports.github.io/ResultsViewer",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
