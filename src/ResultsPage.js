@@ -22,10 +22,6 @@ class ResultsPage extends Component {
     }
 
     render() {
-        // {this.props.lines.map(line => {
-        //     return (<li key={line.position}>{line.position + " - " + line.currentDriver.firstName + " " + line.currentDriver.lastName}</li>)
-        // })}
-        
         let allCategories = this.props.results.cupCategories;
         allCategories.sort();
         allCategories = allCategories.map(category => {
