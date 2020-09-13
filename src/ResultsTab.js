@@ -28,7 +28,7 @@ class ResultsTab extends Component {
                                 <td>{line.cupPosition}</td>
                                 <td>{line.car.raceNumber}</td>
                                 <td>{name}</td>
-                                <td>{CupMapping[line.car.cupCategory]}</td>
+                                <td className = {line.timing.fastestLap ? 'fastest' : ''}>{CupMapping[line.car.cupCategory]}</td>
                             </tr>)
                     })}
                 </tbody>

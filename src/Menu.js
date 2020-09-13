@@ -29,6 +29,7 @@ class Menu extends Component {
         resultObj['leaderboard'] = leaderBoardLinesWithPos;
 
         resultObj = this.addCategories(resultObj);
+        resultObj = this.markFastestLap(resultObj);
 
         this.content = resultObj;
 
@@ -75,6 +76,27 @@ class Menu extends Component {
         });
 
         resultObj["cupCategories"] = cupCategories;
+
+        return resultObj;
+    }
+
+    markFastestLap = (resultObj) => {
+        let fastestLap = Number.MAX_SAFE_INTEGER;
+        let fastestLapCar = undefined;
+        resultObj.leaderboard.forEach(car => {
+            if (car.timing.bestLap < fastestLap) {
+                fastestLapCar = car;
+                fastestLap = car.timing.bestLap;
+            }
+        })
+
+        resultObj.leaderboard.forEach(car => {
+            if (car.car.carId === fastestLapCar.car.carId) {
+                car.timing['fastestLap'] = true;
+            } else {
+                car.timing['fastestLap'] = false;
+            }
+        })
 
         return resultObj;
     }

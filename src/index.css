@@ -32,14 +32,33 @@ table.result-table  {
   font-size: 1.2rem;
 }
 
+tr.PRO {
+  overflow:hidden;
+}
+
+td.fastest:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 55px;
+	background-color: rgb(255, 0, 247);
+	margin-top: -13px;
+	top: 20;
+	margin-left: 36px;
+}
+
 tr.PRO-AM {
   background-color: #9000006e;
+  overflow:hidden;
 }
 
 tr.AM {
   background-color: #b90303f6;
+  overflow:hidden;
 }
 
 tr.Silver {
   background-color: #6e6e6ed5;
+  overflow:hidden;
 }
+
