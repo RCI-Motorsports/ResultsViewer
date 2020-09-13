@@ -36,17 +36,6 @@ tr.PRO {
   overflow:hidden;
 }
 
-td.fastest:after {
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 55px;
-	background-color: rgb(255, 0, 247);
-	margin-top: -13px;
-	top: 20;
-	margin-left: 36px;
-}
-
 tr.PRO-AM {
   background-color: #9000006e;
   overflow:hidden;
@@ -60,5 +49,13 @@ tr.AM {
 tr.Silver {
   background-color: #6e6e6ed5;
   overflow:hidden;
+}
+
+tr.National {
+  background-color: #000000ff;
+}
+
+td.fastest {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 94%, rgba(255,0,247,1) 94%);
 }
 
